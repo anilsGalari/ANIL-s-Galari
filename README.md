@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIL's Galari | 2026 Model Araçlar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-red: #e74c3c;
+            --dark-bg: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--dark-bg); color: var(--text-white); }
+
+        header {
+            background: #000;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-red);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { font-family: 'Orbitron'; font-size: 2.5rem; font-weight: bold; letter-spacing: 3px; }
+        .logo span { color: var(--primary-red); }
+
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero h2 { font-family: 'Orbitron'; margin-bottom: 15px; font-size: 2rem; }
+
+        .section-title { text-align: center; margin: 50px 0 30px; font-family: 'Orbitron'; color: var(--primary-red); font-size: 1.5rem; }
+        
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 25px;
+            padding: 0 5% 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .brand-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px 15px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            border: 1px solid #2a2a2a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-red);
+            background: #222;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+        }
+
+        .brand-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            object-fit: contain;
+            /* Logoların karanlıkta net görünmesi için parlaklık desteği */
+            filter: brightness(0) invert(1);
+        }
+
+        .brand-card:hover .brand-logo {
+            filter: brightness(1) invert(0);
+        }
+
+        .brand-name { color: var(--text-white); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+        footer { 
+            background: #000; 
+            padding: 40px; 
+            text-align: center; 
+            border-top: 1px solid #333; 
+            color: var(--text-gray);
+            font-size: 1rem;
+        }
+        .footer-year { color: var(--primary-red); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ANIL's <span>GALARI</span></div>
+</header>
+
+<section class="hero">
+    <h2>GELECEĞİN SÜRÜŞÜNE HAZIR MISIN?</h2>
+    <p>Premium araçlardan ekonomik seçeneklere, aradığınız her şey burada.</p>
+</section>
+
+<h3 class="section-title">MARKALARIMIZ</h3>
+
+<div class="brand-grid">
+    <a href="mercedes.html" class="brand-card">
+        <img src="https://logo.clearbit.com/mercedes-benz.com" class="brand-logo" alt="Mercedes">
+        <div class="brand-name">Mercedes-Benz</div>
+    </a>
+    <a href="bmw.html" class="brand-card">
+        <img src="https://logo.clearbit.com/bmw.com" class="brand-logo" alt="BMW">
+        <div class="brand-name">BMW</div>
+    </a>
+    <a href="audi.html" class="brand-card">
+        <img src="https://logo.clearbit.com/audi.com" class="brand-logo" alt="Audi">
+        <div class="brand-name">Audi</div>
+    </a>
+    <a href="porsche.html" class="brand-card">
+        <img src="https://logo.clearbit.com/porsche.com" class="brand-logo" alt="Porsche">
+        <div class="brand-name">Porsche</div>
+    </a>
+
+    <a href="fiat.html" class="brand-card">
+        <img src="https://logo.clearbit.com/fiat.com" class="brand-logo" alt="Fiat">
+        <div class="brand-name">Fiat</div>
+    </a>
+    <a href="renault.html" class="brand-card">
+        <img src="https://logo.clearbit.com/renault.com" class="brand-logo" alt="Renault">
+        <div class="brand-name">Renault</div>
+    </a>
+    <a href="dacia.html" class="brand-card">
+        <img src="https://logo.clearbit.com/dacia.com" class="brand-logo" alt="Dacia">
+        <div class="brand-name">Dacia</div>
+    </a>
+    <a href="volkswagen.html" class="brand-card">
+        <img src="https://logo.clearbit.com/volkswagen.com" class="brand-logo" alt="VW">
+        <div class="brand-name">Volkswagen</div>
+    </a>
+    <a href="ford.html" class="brand-card">
+        <img src="https://logo.clearbit.com/ford.com" class="brand-logo" alt="Ford">
+        <div class="brand-name">Ford</div>
+    </a>
+    <a href="hyundai.html" class="brand-card">
+        <img src="https://logo.clearbit.com/hyundai.com" class="brand-logo" alt="Hyundai">
+        <div class="brand-name">Hyundai</div>
+    </a>
+    <a href="toyota.html" class="brand-card">
+        <img src="https://logo.clearbit.com/toyota.com" class="brand-logo" alt="Toyota">
+        <div class="brand-name">Toyota</div>
+    </a>
+    <a href="honda.html" class="brand-card">
+        <img src="https://logo.clearbit.com/honda.com" class="brand-logo" alt="Honda">
+        <div class="brand-name">Honda</div>
+    </a>
+</div>
+
+<footer>
+    <p>&copy; <span class="footer-year">2026</span> ANIL'S GALARI - Tüm Hakları Saklıdır.</p>
+    <p style="margin-top: 5px; font-size: 0.8rem;">Kalitenin ve Güvenin 2026'daki Tek Adresi</p>
+</footer>
+
+</body>
+</html>
